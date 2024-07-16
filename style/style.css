@@ -28,6 +28,10 @@ main{
     font-size: 1.25rem;
     font-weight: 600;
 }
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
 .display-flex{
     display: flex;
 }
@@ -98,19 +102,42 @@ main{
     margin-left: 130px;
     max-width: 560px;
 }
-.feture-title{
-    font-size: 2.8rem;
-    font-weight: 700;
-}
+
 #quick-list{
     font-weight: 500;
 
 }
 .feture-description{}
-
-
-
-
+/* some fect related style  */
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    max-width: 1440px;
+}
+.fact-description{
+    max-width: 540px;
+}
+.fact-card{
+    height: 240px;
+    width: 240px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.fact-number{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.fact-name{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
 
 
 
@@ -124,9 +151,13 @@ main{
     .navbar, .nav-links, .teams{
         flex-direction: column;
     }
-    .team-img-container{
-        grid-template-columns: repeat(1, 1fr);
+    .team-img-container, .facts-container{
+        grid-template-columns:  1fr;
 
+    }
+    .facts-container{
+        justify-items: center;
+        gap: 24px;
     }
     .our-feture{
         margin-left: 20px;
@@ -137,6 +168,11 @@ main{
 @media screen and (min-width:576px) and (max-width:992px) {
     .teams{
         flex-direction: column;
+    }
+    .facts-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        justify-items: center;
     }
     .our-feture{
         margin: 50px auto;
