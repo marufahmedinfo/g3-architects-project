@@ -12,7 +12,7 @@
 main > section{
     margin-top: 130px;
 }
-main{
+main, footer{
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -27,6 +27,10 @@ main{
     border: none;
     font-size: 1.25rem;
     font-weight: 600;
+}
+.btn-primary:hover{
+    background-color: #fad1a1;
+    color: #655e5e
 }
 .section-title{
     font-size: 2.8rem;
@@ -69,9 +73,16 @@ main{
     list-style: none;
     margin-right: 30px;
 }
-.nav-link{
+.nav-link {
     text-decoration: none;
     font-weight: 500;
+    padding: 11px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+.nav-link:hover{
+    background-color: #FF900E;
+    color: white;
 }
 /* banner related sytle  */
 .banner{}
@@ -150,9 +161,9 @@ main{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
-.sponsore-companis img{
+/* .sponsore-companis img{
     filter: grayscale(100%);
-}
+} */
 /* fetures section related style  */
 .fetures{
     gap: 140px;
@@ -190,9 +201,13 @@ main{
     font-size: 4rem;
     font-weight: 700;
 }
+/* footer section  */
 
-
-
+.footer {
+    text-align: center;
+    padding: 22px;
+    margin: 100px 10px;
+}
 
 
 
